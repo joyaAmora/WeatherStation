@@ -56,9 +56,9 @@ namespace WeatherStationTests
             // Arrange
 
             // Act       
-
+            double actual = Math.Round((F - 32) * 5 / 9, 1);
             // Assert
-
+            Assert.Equal(actual, expected);
             /// TODO : git commit -a -m "T02 FahrenheitInCelsius_AlwaysReturnGoodValue : Done"
         }
 
