@@ -1,9 +1,13 @@
-﻿using System;
+﻿using Moq;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using WeatherApp.Models;
+using WeatherApp.Services;
 using WeatherApp.ViewModels;
 using Xunit;
+using Xunit.Sdk;
 
 namespace WeatherStationTests
 {
@@ -67,6 +71,7 @@ namespace WeatherStationTests
         /// </summary>
         /// <remarks>T03</remarks>
         [Fact]
+
         public void GetTempCommand_ExecuteIfNullService_ShouldThrowNullException()
         {
             // Arrange
@@ -74,7 +79,7 @@ namespace WeatherStationTests
             // Act       
 
             // Assert
-
+            Assert.Throws<NullReferenceException>(()=> _sut.GetTempCommand.Execute(string.Empty));
             /// TODO : git commit -a -m "T03 GetTempCommand_ExecuteIfNullService_ShouldThrowNullException : Done"
         }
 
