@@ -42,9 +42,9 @@ namespace WeatherApp.ViewModels
             //CurrentTemp = TemperatureService.GetData();
         }
 
-        //public void SetTemperatureService(ITemperatureService _service)
-        //{
-        //    TemperatureService = _service;
-        //}
+        public void SetTemperatureService(ITemperatureService _service)
+        {
+            TemperatureService = _service;
+        }
     }
 }
