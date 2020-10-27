@@ -93,9 +93,10 @@ namespace WeatherStationTests
             // Arrange
 
             // Act       
-
+            var expected = false;
+            var actual = _sut.GetTempCommand.CanExecute(string.Empty);
             // Assert
-
+            Assert.Equal(actual, expected);
             /// TODO : git commit -a -m "T04 CanGetTemp_WhenServiceIsNull_ReturnsFalse : Done"
         }
 
