@@ -1,8 +1,10 @@
-﻿namespace WeatherApp.Models
+﻿using System;
+
+namespace WeatherApp.Models
 {
     public class TemperatureModel
     {
-        public double DateTime;
+        public DateTime DateTime;
         public double Temperature;
     }
 }

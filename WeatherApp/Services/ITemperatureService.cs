@@ -1,9 +1,10 @@
-﻿using WeatherApp.Models;
+﻿using System.Threading.Tasks;
+using WeatherApp.Models;
 
 namespace WeatherApp.Services
 {
     public interface ITemperatureService
     {
-        public TemperatureModel GetData();
+        public Task<TemperatureModel> GetTempAsync();
     }
 }
