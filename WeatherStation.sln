@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherStationTests", "WeatherStationTests\WeatherStationTests.csproj", "{2E816116-988A-4408-A35D-137A5B6A8C3A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherApp", "WeatherApp\WeatherApp.csproj", "{66E8C0D2-CA51-4476-887D-1217F93D1351}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68135C62-7CAD-41CF-A88B-2CEA93ADBF4B} = {68135C62-7CAD-41CF-A88B-2CEA93ADBF4B}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenWeatherAPI", "..\TP4a\OpenWeatherTest\OpenWeatherAPI\OpenWeatherAPI.csproj", "{68135C62-7CAD-41CF-A88B-2CEA93ADBF4B}"
 EndProject
