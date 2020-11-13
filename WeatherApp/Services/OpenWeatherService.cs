@@ -7,7 +7,7 @@ namespace OpenWeatherAPI
     public class OpenWeatherService : ITemperatureService
     {
         private OpenWeatherProcessor owp;
-        public TemperatureModel LastTemp;
+        public TemperatureModel LastTemp = new TemperatureModel();
 
         public OpenWeatherService(string apiKey)
         {

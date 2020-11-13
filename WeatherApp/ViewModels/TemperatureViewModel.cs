@@ -39,7 +39,7 @@ namespace WeatherApp.ViewModels
 
         private void GetTemp(string obj)
         {
-            CurrentTemp = TemperatureService.GetTempAsync();
+            //CurrentTemp = TemperatureService.GetTempAsync();
         }
 
         public void SetTemperatureService(ITemperatureService _service)

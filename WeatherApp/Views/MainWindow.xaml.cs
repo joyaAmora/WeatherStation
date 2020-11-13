@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using OpenWeatherAPI;
 using System.Windows;
 
 namespace WeatherApp
@@ -12,6 +13,8 @@ namespace WeatherApp
         {
             InitializeComponent();
             AppConfiguration.GetValue("config");
+            OpenWeatherService owp = new OpenWeatherService(null);
+            owp.GetTempAsync();
         }
     }
 }
